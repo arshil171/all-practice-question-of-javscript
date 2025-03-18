@@ -140,10 +140,74 @@ let arraylength = [5,10,15]
 
 let i2 = 0
 
-while (i1 < arrayCount.length) {
+while (i2 < arraylength.length) {
 
     
     i2++
 }
 
-console.log("lenghth of the array elements: ", count1)
+console.log("lenghth of the array elements: ", i2)
+
+
+
+// Q -12  Sum of String Lengths
+//        Given an array of strings `["apple", "banana", "cherry"]`, use a `for` loop to calculate and print the total length of all strings combined.
+
+
+
+let sumString = ["apple","banana","cherry"]
+let sumTotal = 0
+
+
+for(let i=0;i<sumString.length;i++)
+{
+    sumTotal += sumString[i].length
+}
+console.log("Total length of all String ",sumTotal)
+
+
+
+
+//  Q -13 Concatenate Strings
+//        Given an array of strings `["This", "is", "JavaScript"]`, use a `for` loop to concatenate them into one string and print it.
+
+
+let stringConcate = ["This" , "is" , "JavaScript"]
+
+let concatenatedString = ""
+
+for (let i=0;i<stringConcate.length;i++){
+    concatenatedString += stringConcate[i]
+}
+
+console.log("concateneted string :" , concatenatedString)
+
+
+// Q-14  Find String Index
+//       Write a `for` loop to find and print the index of the character `'a'` in the string `"JavaScript"`.
+
+
+let stringIndex  = "JavaScript"
+
+for (let i=0;i<stringIndex.length;i++){
+    if(stringIndex[i] === "a"){
+        console.log(`chracter 'a' found at index ${i}`)
+    }
+}
+
+
+// Q-15    Count Vowels in String
+//         Write a `for` loop to count the number of vowels in the string `"Hello, World!"` and print the count.
+
+
+let countVowels = "Hello, World!"
+let countVowelString = 0
+
+for (let i=0;i<countVowels.length;i++){
+    if(countVowels === "a" || countVowels === "e" || countVowels === "i" || countVowels === "o" || countVowels === "u" || countVowels === "A" || countVowels === "E" || countVowels === "I" || countVowels === "O" || countVowels === "U")
+    {
+        countVowelString += countVowels[i]
+    }
+}
+
+console.log("The Number of Vowel in String" , countVowelString)
